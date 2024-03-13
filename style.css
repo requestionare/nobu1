@@ -1,18 +1,15 @@
-@charset"UTF-8";
-  #copy{font-style:italic;}
+
+.copy{font-style:italic;}
 h1{color:blue}
 .welcome{color:blue}
-.loader{height:200px; width:200px; border:12px; solid #e3e3e3; border radius: 50%; border-right-color:#4070f4; animation:spin 1s ease infinite;}
- @keyframes spin{100%{transform:rotate(360deg)}
 
-   #context{background:white;}
-  #copy{font-style:italic;}
-  #welcome{color:blue}
-  #context{font-size:large;}
-  #welcome{font-size:xx-large}
-  #bo39{width:50%;height:50%;}
+
+  .context{background:white;}
+  .copy{font-style:italic;}
+  .welcome{color:blue}
+  .context{font-size:large;}
+  .welcome{font-size:xx-large}
+  .bo39{width:50%;height:50%;}
          
         
-<body>
-<div class="loader"></div>
-</body>
+
