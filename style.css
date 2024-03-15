@@ -1,7 +1,7 @@
 
 
-.copy{font-style:italic;}
-body{{font-family: "Noto Sans JP", sans-serif;}
+#copy{font-style:italic;}
+#body{font-family: "Noto Sans JP", sans-serif;}
 
 
 h1{color:blue}
