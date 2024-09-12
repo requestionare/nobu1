@@ -446,7 +446,6 @@ body {
 
 
 
-
 <body>
  <div id="load">
   <div>G</div>
@@ -488,7 +487,14 @@ body {
    <img src="bo45.jpg" alt="tani" width="250" height="280" >
     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 </div>
-
+  <script>
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+ 
+  // Add .loaded to .loading
+  spinner.classList.add('loaded');
+}
+</script>
  </body> 
 
 
