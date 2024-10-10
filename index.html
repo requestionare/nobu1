@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html　lang="ja">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .loader {
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading-text {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
 
-<script>
-
-
-
-
-</script>
 
 
 
@@ -205,7 +229,15 @@
 
 <body>
 
+<div class="loader"></div>
+    <div class="loading-text">読み込み中...</div>
 
+    <script>
+        // 3秒後にローディング画面を消す例
+        setTimeout(() => {
+            document.body.innerHTML = '<h1>コンテンツが読み込まれました！</h1>';
+        }, 3000);
+    </script>
   
  <div id="context">
 <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39523292&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39523292&main=1" /></noscript>
