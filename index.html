@@ -1,8 +1,31 @@
 <!DOCTYPE html>
 <html　lang="ja">
-<head>
+<  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ローディングアニメーション</title>
+  <style>
+    .loader {
+      border: 16px solid #f3f3f3; /* 外枠の色 */
+      border-top: 16px solid #3498db; /* アニメーション部分の色 */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
 
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+  </style>
 
 
 
@@ -198,9 +221,7 @@
 
 
 
-<body>
-
-  
+<  <div class="loader"></div>
  <div id="context">
 <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39523292&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39523292&main=1" /></noscript>
 <p id ="hajimeni">この度は福井大学工学部機械システム工学科機械システムコース編入についてのホームページにお越しいただき、ありがとうございます。</p>
